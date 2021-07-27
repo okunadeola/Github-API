@@ -1,0 +1,27 @@
+
+<div class="container">
+  <div class="row justify-content-center my-5 bg-light">
+    <div class="col-6 card my-5">
+      <div class="row p-3">
+        <div class="col-6">
+          <img src={{userData.avatar_url}} class="col-12" alt="profile_img">
+        </div>
+        <div class="col-6">
+
+          <div class="text-dark text-bold">{{userData.login.toUpperCase()}}</div>
+          <small class="text-warning">Followers</small>
+          <div class="d-flex imgBreak">
+            <div class="col-2 mx-0 my-1" *ngFor="let avatar of followers; let i = index">
+              <a href={{avatar.html_url}} target="_blank" title={{avatar.login}}>
+                <img src={{avatar.avatar_url}} class="col gitImg" alt="followers_pic">
+              </a>
+            </div>
+          </div>
+
+          <a href={{userData.html_url}} target="_blank"  class="btn btn-success btn-sm my-2">View GitHub Profile</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

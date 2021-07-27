@@ -1,0 +1,8 @@
+.gitImg{
+  width: 20px;
+  margin: 0;
+  border-radius: 50%;
+}
+.imgBreak{
+  flex-wrap:wrap ;
+}
